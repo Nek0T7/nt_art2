@@ -8,8 +8,8 @@ library(haven)
 library(tidyverse)
 
 #データを読み込み、CSVファイルとして保存する
-data_raw <-read_dta("data/raw/artist_reputation_main.dta")
-write.csv(data_raw,"data/raw/artist_reputation_main.csv",row.names = FALSE)
+data_raw <-read_dta("artist_reputation_main.dta")
+write.csv(data_raw,"artist_reputation_main.csv",row.names = FALSE)
 
 #データの確認
 data_raw
